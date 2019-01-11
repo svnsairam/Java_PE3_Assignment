@@ -63,8 +63,8 @@ local.properties
 *.jar
 *.war
 *.ear
-lib/
-out/
+/lib/
+/out/
 
 ######################
 # Visual Studio Code
