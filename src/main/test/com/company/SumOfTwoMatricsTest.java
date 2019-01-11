@@ -7,16 +7,16 @@ import static org.junit.Assert.*;
 
 public class SumOfTwoMatricsTest {
 
-    SumOfTwoMatrics    sumOfTwoMatrics;
+    SumOfTwoMatrics sumOfTwoMatrics;
 
     @org.junit.Before
     public void setUp() throws Exception {
-        sumOfTwoMatrics    =   new SumOfTwoMatrics();
+        sumOfTwoMatrics = new SumOfTwoMatrics();
     }
 
     @org.junit.After
     public void tearDown() throws Exception {
-        sumOfTwoMatrics    =   null;
+        sumOfTwoMatrics = null;
     }
 
 }

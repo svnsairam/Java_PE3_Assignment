@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 public class DayOfWeek {
 
-    public void dayOfWeek(){
+    public void dayOfWeek() {
         // Get calendar set to current date and time
         Calendar c = Calendar.getInstance();
 
@@ -17,7 +17,7 @@ public class DayOfWeek {
         // Print dates of the current week starting on Monday
         DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
         System.out.println(df.format(c.getTime()));
-        for (int i = 0; i <6; i++) {
+        for (int i = 0; i < 6; i++) {
             c.add(Calendar.DATE, 1);
         }
         System.out.println(df.format(c.getTime()));

@@ -9,54 +9,54 @@ import static org.junit.Assert.*;
 
 public class ArrayOfPlacesTest {
 
-    ArrayOfPlaces   arrayOfPlaces;
+    ArrayOfPlaces arrayOfPlaces;
+
     @Before
     public void setUp() throws Exception {
-        arrayOfPlaces   =   new ArrayOfPlaces();
+        arrayOfPlaces = new ArrayOfPlaces();
     }
 
     @After
     public void tearDown() throws Exception {
-        arrayOfPlaces   =   null;
+        arrayOfPlaces = null;
     }
 
     @Test
     public void arrayOfPlacesSuccess() {
-        String  expectedValue    =   "bnglr hydrbd dlh Nv Mmb ";
-        String  places[]         =   {"bangalore","hyderabad","delhi","Navi Mumbai"};
-        String  actualValue      =    arrayOfPlaces.arrayOfPlaces(places);
+        String expectedValue = "bnglr hydrbd dlh Nv Mmb ";
+        String places[] = {"bangalore", "hyderabad", "delhi", "Navi Mumbai"};
+        String actualValue = arrayOfPlaces.arrayOfPlaces(places);
 
-        Assert.assertEquals(expectedValue,actualValue);
+        Assert.assertEquals(expectedValue, actualValue);
     }
 
     @Test
     public void arrayOfPlacesFailure() {
-        String  expectedValue    =   "bnglr new dlh Nv Mmb ";
-        String  places[]         =   {"bangalore","hyderabad","delhi","Navi Mumbai"};
-        String  actualValue      =    arrayOfPlaces.arrayOfPlaces(places);
+        String expectedValue = "bnglr new dlh Nv Mmb ";
+        String places[] = {"bangalore", "hyderabad", "delhi", "Navi Mumbai"};
+        String actualValue = arrayOfPlaces.arrayOfPlaces(places);
 
-        Assert.assertNotEquals(expectedValue,actualValue);
+        Assert.assertNotEquals(expectedValue, actualValue);
     }
 
     @Test
     public void arrayOfPlacesInvalidString() {
-        String  expectedValue    =   "Invalid places name";
-        String  places[]         =   {"bangalore","hyderabad","02delhi","Navi Mumbai"};
-        String  actualValue      =    arrayOfPlaces.arrayOfPlaces(places);
+        String expectedValue = "Invalid places name";
+        String places[] = {"bangalore", "hyderabad", "02delhi", "Navi Mumbai"};
+        String actualValue = arrayOfPlaces.arrayOfPlaces(places);
 
-        Assert.assertEquals(expectedValue,actualValue);
+        Assert.assertEquals(expectedValue, actualValue);
     }
 
     @Test
     public void arrayOfPlacesNull() {
-        String  expectedValue    =   "Null input is not expected";
-        String  places[]         =   null;
-        String  actualValue      =    arrayOfPlaces.arrayOfPlaces(places);
+        String expectedValue = "Null input is not expected";
+        String places[] = null;
+        String actualValue = arrayOfPlaces.arrayOfPlaces(places);
 
-        Assert.assertEquals(expectedValue,actualValue);
+        Assert.assertEquals(expectedValue, actualValue);
         Assert.assertNotNull(actualValue);
     }
-
 
 
 }
