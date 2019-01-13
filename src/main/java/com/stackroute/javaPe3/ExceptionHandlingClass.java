@@ -1,3 +1,8 @@
+/*
+Write a program that will generate exceptions of type NegativeArraySizeException,
+IndexOutOfBoundsException, NullPointerException.
+Record the catching of each exception by displaying the message stored in the exception object.
+ */
 package com.stackroute.javaPe3;
 
 public class ExceptionHandlingClass {
