@@ -1,7 +1,6 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 public class SumOfTwoMatrics {
-
     public String sumOfTwoMatrice(String row, String column, String[][] matrix1, String[][] matrix2) {
         if (row.matches("\\d[0-9]") && column.matches("\\d[0-9]")) {
             int noOfRows = Integer.parseInt(row);
@@ -28,5 +27,4 @@ public class SumOfTwoMatrics {
             return "Invalid Input";
         }
     }
-
 }

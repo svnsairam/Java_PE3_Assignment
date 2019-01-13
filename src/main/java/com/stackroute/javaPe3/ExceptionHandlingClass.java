@@ -1,7 +1,6 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 public class ExceptionHandlingClass {
-
     public static void checkExceptions() {
         /*Negative Array Size Exception*/
         try {
@@ -9,7 +8,6 @@ public class ExceptionHandlingClass {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-
         /*ArrayIndexOutOfBounds Exception*/
         try {
             int array[] = new int[1];
@@ -31,5 +29,4 @@ public class ExceptionHandlingClass {
 
         checkExceptions();
     }
-
 }

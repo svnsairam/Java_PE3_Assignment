@@ -1,7 +1,6 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 public class StringException extends Exception {
-
     StringException() {
         String str = "This string is in constructor.";
         System.out.println(str);
@@ -18,5 +17,4 @@ public class StringException extends Exception {
             System.out.println("This is a finally string");
         }
     }
-
 }

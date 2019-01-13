@@ -1,13 +1,10 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 public class ArrayOfPlaces {
-
     public String arrayOfPlaces(String[] places) {
-
         if (places == null) {
             return "Null input is not expected";
         }
-
         String[] resultantPlaces = new String[places.length];
         for (int i = 0; i < places.length; i++) {
             if (places[i].matches("\\w+[^0-9]")) {

@@ -1,10 +1,7 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 public class StudentMarks {
-
-
     public String studentMarks(String noOfStudents, String[] grades) {
-
         if (noOfStudents.matches("[0-9]+")) {
             int totalNoOfStudents = Integer.parseInt(noOfStudents);
             String resultantStringOfGrades = new String();
@@ -21,5 +18,4 @@ public class StudentMarks {
             return "Invalid Input";
         }
     }
-
 }

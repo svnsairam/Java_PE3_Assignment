@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe3;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -8,7 +8,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ArrayOfPlacesTest {
-
     ArrayOfPlaces arrayOfPlaces;
 
     @Before
@@ -26,7 +25,6 @@ public class ArrayOfPlacesTest {
         String expectedValue = "bnglr hydrbd dlh Nv Mmb ";
         String places[] = {"bangalore", "hyderabad", "delhi", "Navi Mumbai"};
         String actualValue = arrayOfPlaces.arrayOfPlaces(places);
-
         Assert.assertEquals(expectedValue, actualValue);
     }
 
@@ -35,7 +33,6 @@ public class ArrayOfPlacesTest {
         String expectedValue = "bnglr new dlh Nv Mmb ";
         String places[] = {"bangalore", "hyderabad", "delhi", "Navi Mumbai"};
         String actualValue = arrayOfPlaces.arrayOfPlaces(places);
-
         Assert.assertNotEquals(expectedValue, actualValue);
     }
 
@@ -44,7 +41,6 @@ public class ArrayOfPlacesTest {
         String expectedValue = "Invalid places name";
         String places[] = {"bangalore", "hyderabad", "02delhi", "Navi Mumbai"};
         String actualValue = arrayOfPlaces.arrayOfPlaces(places);
-
         Assert.assertEquals(expectedValue, actualValue);
     }
 
@@ -53,10 +49,7 @@ public class ArrayOfPlacesTest {
         String expectedValue = "Null input is not expected";
         String places[] = null;
         String actualValue = arrayOfPlaces.arrayOfPlaces(places);
-
         Assert.assertEquals(expectedValue, actualValue);
         Assert.assertNotNull(actualValue);
     }
-
-
 }
