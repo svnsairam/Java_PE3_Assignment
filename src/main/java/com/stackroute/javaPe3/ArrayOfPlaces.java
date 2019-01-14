@@ -22,6 +22,8 @@ public class ArrayOfPlaces {
             return "Null input is not expected";
         }
         String[] resultantPlaces = new String[places.length];
+        // If place names contain any symbols or digit we mark as invalid place names.
+        // Then replace all vowels with empty string and add to resultantPlaces string array.
         for (int i = 0; i < places.length; i++) {
             if (places[i].matches("\\w+[^0-9]")) {
                 resultantPlaces[i] = places[i].replaceAll("[aeiou]", "");

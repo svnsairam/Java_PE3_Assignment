@@ -16,6 +16,7 @@ public class ConsecutiveNumbers {
         if (numbers == null) {
             return "Null input not expected";
         }
+        // Validate the string using regEx [0-9]
         String arrayNumbers[] = numbers.split(" ");
         int stringToInt[] = new int[arrayNumbers.length];
         for (int i = 0; i < arrayNumbers.length; i++) {
@@ -31,10 +32,12 @@ public class ConsecutiveNumbers {
         if (stringToInt.length == 1) {
             return "Single digit is not consecutive a number";
         }
+        // Calculate the initial diff between first 2 elements
         int diff = stringToInt[0] - stringToInt[1];
         if (diff > 1 || diff == 0 || diff < -1) {
             return "not consecutive numbers";
         }
+        // See if difference remains same across all the elements.
         for (int i = 1; i < stringToInt.length - 1; i++) {
             int tempDiff = stringToInt[i] - stringToInt[i + 1];
             if (diff != tempDiff) {

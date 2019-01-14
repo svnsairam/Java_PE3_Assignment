@@ -32,7 +32,6 @@ public class SumOfTwoMatrics {
                 for (int j = 0; j < noOfColumn; j++) {
                     resultantString = resultantString.concat(resultantMatrix[i][j] + " ");
                 }
-
             }
             return resultantString;
         } else {

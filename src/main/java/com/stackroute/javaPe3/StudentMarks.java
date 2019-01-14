@@ -11,6 +11,7 @@ public class StudentMarks {
         if (noOfStudents.matches("[0-9]+")) {
             int totalNoOfStudents = Integer.parseInt(noOfStudents);
             String resultantStringOfGrades = new String();
+            // Using regEx [0-9] we validate the wheather inputString is correct. And checking for null values as well.
             for (int i = 0; i < totalNoOfStudents; i++) {
                 System.out.println(grades[i]);
                 if ((grades[i].matches("[0-9]+")) && (Integer.parseInt(grades[i]) <= 100)) {
